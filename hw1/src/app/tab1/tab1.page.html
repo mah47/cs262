@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+        Homework 1: Ionic Calculator
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-header>
+    <ion-label size = "large">Calculate Now!</ion-label>
+  </ion-header>
+
+  <br>
+  
+  <ion-item>
+    <ion-label>Value 1:  </ion-label>
+    <ion-input type="number" [(ngModel)] = "value1"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+      <ion-label>Value 2:  </ion-label>    
+      <ion-input type="number" [(ngModel)] = "value2"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+      <ion-label>Answer: <span class = "answer"> {{answer}} </span></ion-label>
+  </ion-item>
+  
+  
+  <ion-button shape = "round" size = "small" (click) = "addition()"> + </ion-button>
+  <ion-button shape = "round" size = "small" (click) = "subtraction()"> - </ion-button>
+  <ion-button shape = "round" size = "small" (click) = "multiplication()"> * </ion-button>
+  <ion-button shape = "round" size = "small" (click) = "division()"> / </ion-button>
+  
+  
+</ion-content>
