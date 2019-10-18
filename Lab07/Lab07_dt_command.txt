@@ -1,0 +1,10 @@
+mah47=> \dt
+            List of relations
+ Schema |      Name      | Type  | Owner
+--------+----------------+-------+-------
+ public | game           | table | mah47
+ public | player         | table | mah47
+ public | playergame     | table | mah47
+ public | playerproperty | table | mah47
+ public | property       | table | mah47
+(5 rows)
