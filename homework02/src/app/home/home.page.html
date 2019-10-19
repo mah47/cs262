@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Homework 2
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <form (ngSubmit)="saveToNative()">
+
+    
+    <ion-item>
+      <ion-input type="text" [(ngModel)] = "title" placeholder="type"></ion-input>
+    </ion-item>
+    <ion-button type="submit">Save</ion-button>
+
+
+
+
+  </form>
+  
+
+  <ion-button (click)="getFromNative()">Load</ion-button>
+  {{title}}
+
+</ion-content>
