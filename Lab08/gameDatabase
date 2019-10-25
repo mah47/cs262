@@ -1,0 +1,6 @@
+database:
+Game(ID, Time)
+Player(ID, emailaddress, name)
+PlayerGame(gameID, playerID, score, location, cash)
+Property(name)
+PlayerProperty(gameID, playerID, propertyID, houses, hotels)
