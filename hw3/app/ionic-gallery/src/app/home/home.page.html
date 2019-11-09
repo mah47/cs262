@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Gallery
+    </ion-title>
+
+    <ion-buttons end>
+       <button
+          ion-button
+          block
+          color="primary"
+          (click)="addRecord()">Add</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+   <ion-list>
+      <ion-item
+         *ngFor="let item of items">
+         <ion-avatar item-start>
+           <img src="{{ item.thumbnail }}">
+         </ion-avatar>
+         <h2>{{ item.name }}</h2>
+
+        <ion-buttons end>
+           <button
+              ion-button
+              color="danger"
+              (click)="deleteRecord(item)">Delete</button>
+
+
+           <button
+              ion-button
+              color="secondary"
+              (click)="updateRecord(item)">Update</button>
+
+
+           <button
+              ion-button
+              color="primary"
+              (click)="viewRecord(item)">View</button>
+         </ion-buttons>
+	  </ion-item>
+   </ion-list>
+
+
+</ion-content>

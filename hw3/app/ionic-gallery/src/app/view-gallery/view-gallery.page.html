@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+     <ion-title>View</ion-title>
+     <ion-buttons end>
+        <button
+           ion-button
+           icon-only
+           (click)="closeModal()">
+           <ion-icon
+              ios="ios-close"
+              md="md-close"></ion-icon>
+        </button>
+     </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <img src="{{ thumbnail }}">
+  <h2>{{ name }}</h2>
+  <div class="description"
+     *ngIf="description"
+     [innerHTML]="description"></div>
+
+
+  <button
+     ion-button
+     block
+     color="primary"
+     (click)="generatePDF()">Publish to PDF</button>
+
+</ion-content>
