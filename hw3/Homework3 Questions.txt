@@ -1,0 +1,2 @@
+1) It is RESTful. Get, Post, Put, Delete and Create. These operation that we used in Ionic are HTTP Operations.
+2) MongoDB Database. For this homework assignment the answer depends on what we used for the program and we used MongoDB Database
