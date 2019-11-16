@@ -1,0 +1,3 @@
+For lab 11, Prof. Vander Linden told us we could add the extension TS lint for linting our CS262 project
+Changed code, spellchecked, revised code, added more code for the project and added documentation. 
+File: pretzel.ts, cheesecake(folder), quesillo(folder) + camera code
